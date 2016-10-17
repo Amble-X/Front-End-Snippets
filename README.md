@@ -1,3 +1,3 @@
 # Front-End-Snippets
 
-Code snippets of HTML, CSS and Javascript.
+Code snippets of HTML, CSS and JavaScript.
