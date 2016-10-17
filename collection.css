@@ -1,0 +1,48 @@
+#firstline{
+  background-color:#ddd;
+  border-style:solid;
+  border-width: thin;
+  border-color: #abcdef;
+  font-size: 16px;
+}
+.double2{
+  background-color:#ddd;
+  text-align: center;
+  height: 100%auto;
+}
+a:link{
+  color:purple;
+}
+a:hover{
+  color: red;
+  text-shadow: 1px 2px #fefefe;
+}
+#fashion{
+  font-family:fantasy;
+  color:rgba(75,0,130,0.4);
+  text-shadow: 5px 3px #abcdef;
+  font-size: 80px;
+}
+.firstpage{
+  padding: 100px;
+}
+.horizental{
+  height: 1px;
+  border-color: black;
+  border-width: 1px;
+  border-style: dotted;
+  margin-top: 30px;
+
+
+}
+.bigbuck{
+  margin: 70px auto;
+  }
+.ownsbtn{
+  border-style: dotted;;
+  border-width: 2px;
+  border-color: #abcdef;
+  height: 50px;
+  width:120px;
+  box-shadow: 3px 3px gray;
+  }
