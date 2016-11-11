@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=“viewport” content=“width=device-width, initial-scale=1”>
+<title>  A Random Quote Machine </title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+<style>
+html,body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  }
+#huge {
+  width: 100%;
+  height: 100%;
+  background-color: #adf321;
+  padding-top: 1%;
+}
+#middle{
+    background-color: white;
+    margin:10% 25%;
+    padding: 1% 1%;
+  }
+#qutoes{
+  text-align: center;
+      }
+#name{
+  text-align: right;
+}
+
+</style>
+<script>
+function Quto(t, a){
+  this.txt = t;
+  this.author = a;
+}
+
+var myQutoes=[];
+myQutoes.push(new Quto("孤独并不是来自身边无人。感到孤独的真正原因是因为一个人无法与他人交流对其最要紧的感受。" ,"——荣格"));
+myQutoes.push(new Quto("Loneliness does not come from having no people around you, but from being unable to communicate the things that seem important to you." ,"----Carl Jung"));
+myQutoes.push(new Quto("住进布达拉宫，我是雪域最大的王。流浪在拉萨街头，我是世间最美的情郎。" ,"——仓央嘉措"));
+
+var qq;
+
+function random(){
+  qq=myQutoes[parseInt(Math.random()*3)];
+  var myColor= '#' + parseInt(Math.random()*1000000);
+  document.getElementById('qutoes').innerHTML=qq.txt;
+  document.getElementById('name').innerHTML=qq.author;
+  document.getElementById('huge').style.backgroundColor= myColor;
+  document.getElementById('trigger').style.backgroundColor= myColor;
+}
+
+function share() {
+
+}
+
+
+</script>
+</head>
+<body>
+<div id="huge">
+<div id="middle">
+
+<h2 id="qutoes">This version might be used in for loops and the like when it is unknown whether non-BMP characters exist before the specified index position.</h2>
+<p id="name"> ----Name</p>
+
+<div id="toRight" align="right">
+  <a class="twitter" href="https://twitter.com/intent/tweet?
+        url=http%3A%2F%2Fdolphin.com%2Fhappy-new-year%2F &
+        text="
+   target="_blank" id="J-share-twitter"> twitter
+</a>
+
+<button  id="trigger" onclick="random()"  > New quote </button>
+</div>
+</div>
+</div>
+
+</body>
+</html>

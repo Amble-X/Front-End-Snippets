@@ -37,7 +37,8 @@ a:hover{
 }
 .bigbuck{
   margin: 70px auto;
-  }
+  width: 500px;
+}
 .ownsbtn{
   border-style: dotted;;
   border-width: 2px;
